@@ -25,4 +25,16 @@ public class SortUtils {
         
     }
     
+    /**
+     * 交换数组中俩个位置的值
+     * @param arrays
+     */
+    public static void swap(int [] arrays , int i, int j){
+
+        int temp = arrays [i];
+        arrays [i] = arrays [j];
+        arrays [j] = temp;
+        
+    }
+    
 }

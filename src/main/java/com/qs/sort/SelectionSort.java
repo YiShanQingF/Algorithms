@@ -37,16 +37,12 @@ public class SelectionSort {
             
             // i 初始位数  temp 临时目标位数
             temp = i;
-            a = arrays [temp];
             int total = 0;
             // 选择数组最小值，并记录位数
-            for (int j = i; j < arrays.length -1 ; j++) {
-                // 目标位数的值
-                b = arrays [j + 1];
-                // 标位数值 小于 初始位数值  记录目标位数
-                if (b < a){
+            for (int j = i ; j < arrays.length -1 ; j++) {
+                // 目标位数的值 小于 初始位数值  记录目标位数
+                if (arrays [j + 1] < arrays [temp]){
                     temp = j + 1;
-                    a = arrays [temp];
                 }
                 total++;
             }
